@@ -37,6 +37,6 @@ if __name__ == '__main__':
 
     basename = sys.argv[1]
     server = simserver.SessionServer(basename)
-    gensim.utils.pyro_daemon('gensim.testserver', server)
+    gensim.utils.pyro_daemon('gensim.simserver', server)
 
     logging.info("finished running %s" % program)
